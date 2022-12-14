@@ -1,0 +1,195 @@
+
+
+
+
+/** { border:2px solid red;}*/
+
+
+
+body{ 
+    background: #adacac no-repeat fixed center/cover ;
+   margin: auto;
+   
+  
+}
+
+
+.formulaire__contain{
+    background: #172f3c;
+    width: 900px;
+    height: 900px;    
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 5px solid #2c4d3f;
+    position: relative;
+    margin: 20px auto 10px auto;
+  
+  
+    
+}
+    
+   
+.contain__bloc1{
+    
+    margin-top: 30px;
+    position: absolute;
+    height: 50px;
+    width: 90%; 
+    display: flex;
+    justify-content: center;
+   
+} 
+
+input[type="radio"].bloc1__signup {
+    display: none;
+}
+input[type="radio"].bloc1__signup + label {
+    height: 70px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background: rgb(53, 174, 164);
+}
+
+input[type="radio"].bloc1__signup:checked + label {
+        border: 1px solid rgb(11, 61, 12);
+}
+
+input[type="radio"].login {
+        display: none;
+}
+      
+input[type="radio"].login + label {
+        height: 70px;
+        width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        background: rgb(73, 84, 97);
+}
+
+input[type="radio"].login:checked + label {
+        border: 1px solid rgb(59, 57, 57);   
+}
+
+.titre{
+    width: auto;
+    height: 50px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family :Arial, sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+}
+
+.contain__bloc2{
+ 
+ 
+width: 95%;
+ height: 500px;
+ min-height:500px ;
+ position: relative;
+top:35%;
+
+ margin:10px 80px 10px 80px;
+}
+
+
+
+form{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  grid-template-areas:
+  "i1 i2"
+  "i3 i3 "
+  "i4 i4"
+  "bt bt";
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+ 
+#firstname{
+  grid-area: i1;
+  height: 80px;
+  width: 350px;
+  margin:auto;
+  background: none;
+  border:1px solid white;
+}
+
+#surname{
+  grid-area: i2;
+  height: 80px;
+  width: 350px;
+  margin:auto;
+  background: none;
+  border:1px solid white;
+}
+
+#email{
+  grid-area: i3;
+  height: 80px;
+  width: 98%;
+  margin: auto;
+  background: none;
+  border:1px solid white;
+}
+
+#password{
+  grid-area: i4;
+  height: 80px;
+  width: 98%;
+  margin: auto;
+  background: none;
+  border:1px solid white; 
+}
+
+input[type="submit"] {
+  grid-area: bt;
+  cursor: pointer;
+  background: rgb(53, 174, 164);
+  transition: 0.3s ;
+  text-align: center;
+  height:90%;
+  margin-top: 20px;
+  font-size: 2.5rem ;
+  color: white ;
+  font-family:'Lucida Grande', sans-serif;
+}
+
+input[type="submit"]:hover{
+  background: rgb(137, 219, 236);
+  color: rgb(100, 83, 83);
+  
+  
+
+@media screen and (max-width: 480px) 
+{
+  
+
+
+
+
+
+  } 
+
+
+
+
+
+
+
